@@ -1,0 +1,20 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "dev:test": "lerna run --scope kuan-utils -- yarn dev",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "packages/**/*.{js,jsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^3.0.1",
+    "lerna": "^3.16.4",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2"
+  }
+}

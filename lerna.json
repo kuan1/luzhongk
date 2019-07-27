@@ -1,0 +1,9 @@
+{
+  "command": {
+    "publish": {
+      "ignoreChanges": ["ignored-file", "*.md"]
+    }
+  },
+  "packages": ["packages/@luzhongk/*"],
+  "version": "independent"
+}
