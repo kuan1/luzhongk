@@ -1,10 +1,10 @@
-  
 const fs = require('fs')
 const path = require('path')
 const execa = require('execa')
 
-async function genNewRelease () {
+async function genNewRelease() {
   const nextVersion = require('../lerna.json').version
+  console.log(nextVersion)
   const { stdout } = await execa(require.resolve('lerna-changelog/bin/cli'), [
     '--next-version',
     nextVersion

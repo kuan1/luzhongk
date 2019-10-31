@@ -15,8 +15,8 @@
   "packages": ["packages/*"],
   "changelog": {
     "labels": {
-      "feat": ":feat: 新功能",
-      "fix": ":bug: 修复bug",
+      "feast": ":feast: 新功能",
+      "fix": ":fix: 修复bug",
       "doc": ":doc: 文档",
       "style": ":style: 样式修改",
       "refactor": ":refactor: 功能重构",
