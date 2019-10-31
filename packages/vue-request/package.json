@@ -28,5 +28,11 @@
   },
   "bugs": {
     "url": "https://github.com/kuan1/luzhongk/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "kuan-utils": "^1.3.15"
   }
 }
