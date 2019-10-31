@@ -1,0 +1,32 @@
+{
+  "name": "@luzhongk/vue-request",
+  "version": "0.0.0",
+  "description": "axios 在vue中使用",
+  "keywords": [
+    "vue",
+    "axios",
+    "request"
+  ],
+  "author": "luzhongkuan <luzhongk@126.com>",
+  "homepage": "https://github.com/kuan1/luzhongk/tree/master/packages/vue-reqeust",
+  "license": "ISC",
+  "main": "lib/vue-request.js",
+  "directories": {
+    "lib": "lib",
+    "src": "soucrce"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuan1/luzhongk.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/kuan1/luzhongk/issues"
+  }
+}

@@ -1,29 +1,7 @@
 {
-  "name": "vue-dialog",
+  "name": "root",
   "private": true,
-  "scripts": {
-    "dev": "node dev",
-    "dev:test": "lerna run --scope kuan-utils -- yarn dev",
-    "precommit": "lint-staged"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kuan1/luzhongk.git"
-  },
-  "homepage": "https://github.com/kuan1/luzhongk#readme",
-  "author": "luzhongk@126.com",
-  "lint-staged": {
-    "packages/**/*": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "devDependencies": {
-    "cross-env": "^5.2.0",
-    "husky": "^3.0.1",
-    "kuan-pack": "^2.1.5",
-    "lerna": "^3.16.4",
-    "lint-staged": "^9.2.1",
-    "prettier": "^1.18.2"
+    "lerna": "^3.16.4"
   }
 }
