@@ -1,11 +1,9 @@
-# `vue-request`
+# `@luzhongk/vue-request`
 
-> TODO: description
+> axios 在 vue 中使用
 
 ## Usage
 
 ```
-const vueRequest = require('vue-request');
-
-// TODO: DEMONSTRATE API
+npm publish
 ```
