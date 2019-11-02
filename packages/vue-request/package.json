@@ -5,6 +5,9 @@
   "keywords": [
     "axios、vue"
   ],
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 --commit-path '.'"
+  },
   "author": "luzhongkuan <luzhongk@126.com>",
   "homepage": "https://github.com/kuan1/luzhongk/tree/master/packages/vue-request",
   "license": "ISC",
@@ -21,9 +24,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kuan1/luzhongk.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/kuan1/luzhongk/issues"

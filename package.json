@@ -1,6 +1,9 @@
 {
   "name": "luzhongk",
   "version": "1.0.0",
+  "scripts": {
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+  },
   "devDependencies": {
     "lerna": "^3.16.4"
   }
