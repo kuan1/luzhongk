@@ -2,6 +2,7 @@
   "name": "luzhongk",
   "version": "1.0.0",
   "scripts": {
+    "bootstrap": "lerna bootstrap",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "gitHooks": {
@@ -13,15 +14,8 @@
   "author": "luzhongk@126.com",
   "license": "ISC",
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.0.0",
-    "@vue/cli-plugin-eslint": "^4.0.0",
-    "@vue/cli-service": "^4.0.0",
-    "babel-eslint": "^10.0.3",
     "chalk": "^2.4.2",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
     "lerna": "^3.16.4",
-    "vue-template-compiler": "^2.6.10",
     "yorkie": "^2.0.0"
   }
 }
