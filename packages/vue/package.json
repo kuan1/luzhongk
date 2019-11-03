@@ -34,8 +34,8 @@
     "url": "https://github.com/kuan1/luzhongk/issues"
   },
   "dependencies": {
-    "@luzhongk/vue-feedback": "^1.0.0",
-    "@luzhongk/vue-request": "^1.0.0",
+    "@luzhongk/vue-feedback": "^0.0.1",
+    "@luzhongk/vue-request": "^0.0.1",
     "core-js": "^3.3.2",
     "vue": "^2.6.10"
   },
