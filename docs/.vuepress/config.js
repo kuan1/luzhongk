@@ -12,7 +12,6 @@ module.exports = {
     },
     nav: [
       // 导航链接
-      { text: 'Home ', link: '/' },
       // {
       //   text: '组件',
       //   items: [

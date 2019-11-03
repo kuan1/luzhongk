@@ -9,7 +9,7 @@
     "dev": "yarn serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:lib": "vue build src/feedback/index.js -t lib -d lib -n vue-feedback",
+    "build:lib": "vue build index.js -t lib -d lib -n vue-feedback",
     "lint": "vue-cli-service lint",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 --commit-path '.'"
   },

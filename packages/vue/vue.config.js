@@ -13,17 +13,12 @@ module.exports = {
     proxy: 'https://www.luzhongkuan.cn',
     disableHostCheck: true
   },
-  css: {
-    loaderOptions: {
-      // 给 sass-loader 传递选项
-      sass: {
-        data: `@import "@/styles/variables.scss";`
-      }
-    }
-  },
   configureWebpack: {
     resolve: {
       symlinks: false // 使用npm link
+    },
+    entry: {
+      app: './index.js'
     }
   },
   productionSourceMap: false

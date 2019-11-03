@@ -21,9 +21,23 @@ module.exports = {
       }
     }
   },
+  // configureWebpack: config => {
+  //   // config.entry.app = './index.js'
+  //   config.resolve.symlinks = false
+  //   console.log(config.externals)
+  //   return config
+  // },
   configureWebpack: {
     resolve: {
       symlinks: false // 使用npm link
+    },
+    entry: {
+      app: './index.js'
+    },
+    externals: {
+      vue: { commonjs: 'vue', commonjs2: 'vue', root: 'Vue' },
+      axios: 'axios',
+      'js-sha256': 'js-sha256'
     }
   },
   productionSourceMap: false

@@ -22,9 +22,16 @@ module.exports = {
       }
     }
   },
+  // configureWebpack: config => {
+  //   config.entry.app = './src/main1.js'
+  //   console.log(config.externals)
+  // },
   configureWebpack: {
     resolve: {
       symlinks: false // 使用npm link
+    },
+    entry: {
+      app: './index.js'
     }
   },
   productionSourceMap: false

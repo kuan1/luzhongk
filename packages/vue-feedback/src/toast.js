@@ -1,4 +1,4 @@
-import Toast from '../components/Toast.vue'
+import Toast from './components/Toast.vue'
 import Monitor from './VueMonitor'
 
 let monitor

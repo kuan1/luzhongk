@@ -1,8 +1,11 @@
-import Vue from 'vue'
-import App from './App'
+import createApi from './createApi'
+import encrypt from './encrypt'
+import loading from './utils/loading'
+import toast from './utils/toast'
 
-Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(App)
-}).$mount('#app')
+export default {
+  createApi,
+  encrypt,
+  loading,
+  toast
+}
