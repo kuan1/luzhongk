@@ -28,9 +28,6 @@
   "bugs": {
     "url": "https://github.com/kuan1/luzhongk/issues"
   },
-  "gitHooks": {
-    "commit-msg": "node scripts/verifyCommitMsg.js"
-  },
   "dependencies": {
     "core-js": "^3.3.2",
     "vue": "^2.6.10",

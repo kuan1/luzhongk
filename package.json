@@ -4,8 +4,17 @@
   "scripts": {
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
-  "devDependencies": {
-    "lerna": "^3.16.4"
+  "gitHooks": {
+    "commit-msg": "node scripts/verifyCommitMsg.js"
   },
-  "license": "ISC"
+  "keywords": [
+    "luzhongk"
+  ],
+  "author": "luzhongk@126.com",
+  "license": "ISC",
+  "devDependencies": {
+    "chalk": "^2.4.2",
+    "lerna": "^3.16.4",
+    "yorkie": "^2.0.0"
+  }
 }
