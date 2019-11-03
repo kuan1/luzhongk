@@ -5,8 +5,13 @@
 </template>
 
 <script>
-export default {
+import test from '@luzhongk/vue-feedback'
 
+console.log(test)
+
+export default {
+  mounted() {
+  }
 }
 </script>
 

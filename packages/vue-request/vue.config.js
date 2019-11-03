@@ -10,7 +10,7 @@ module.exports = {
   publicPath: isDev ? '/' : `/`, // public path
   outputDir: resolve(`${distName}`), // 输入地址
   devServer: {
-    proxy: 'https://koubei.weddingee.com',
+    proxy: 'https://www.luzhongkuan.cn',
     disableHostCheck: true
   },
   css: {
@@ -19,6 +19,11 @@ module.exports = {
       sass: {
         data: `@import "@/styles/variables.scss";`
       }
+    }
+  },
+  configureWebpack: {
+    resolve: {
+      symlinks: false // 使用npm link
     }
   },
   productionSourceMap: false
