@@ -20,12 +20,14 @@ export default {
   },
   methods: {
     show(tips = '') {
+      if (typeof window === 'undefined') return
       if (!tips) return
       this.tips = tips
       this.visible = true
       document.body.addEventListener('touchmove', preventDefault)
     },
     hide() {
+      if (typeof window === 'undefined') return
       this.visible = false
       document.body.removeEventListener('touchmove', preventDefault)
     }
@@ -34,6 +36,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import './style.less';
+@import "./style.less";
 </style>
 

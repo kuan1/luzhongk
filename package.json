@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "docs:dev": "cross-env NODE_ENV=development vuepress dev docs",
-    "docs:build": "cross-env NODE_ENV=production vuepress build docs",
-    "deploy": "gh-pages -d dist",
+    "docs:build": "vuepress build docs",
+    "deploy": "NODE_DEBUG=gh-pages gh-pages -d docs/.vuepress/dist",
     "bootstrap": "lerna bootstrap",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
