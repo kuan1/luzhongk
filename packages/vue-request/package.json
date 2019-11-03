@@ -27,5 +27,22 @@
   },
   "bugs": {
     "url": "https://github.com/kuan1/luzhongk/issues"
+  },
+  "gitHooks": {
+    "commit-msg": "node scripts/verifyCommitMsg.js"
+  },
+  "dependencies": {
+    "core-js": "^3.3.2",
+    "vue": "^2.6.10",
+    "yorkie": "^2.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.0.0",
+    "@vue/cli-plugin-eslint": "^4.0.0",
+    "@vue/cli-service": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
   }
 }
