@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "axios在vue中使用",
   "keywords": [
-    "axios、vue"
+    "axios",
+    "vue"
   ],
   "scripts": {
     "dev": "yarn serve",
