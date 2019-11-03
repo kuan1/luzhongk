@@ -1,26 +1,17 @@
 {
-  "version": "1.0.0",
-  "npmClient": "npm",
+  "version": "0.0.1",
+  "packages": [
+    "packages/*"
+  ],
   "command": {
     "publish": {
-      "ignoreChanges": ["ignored-file", "*.md"],
-      "message": "chore(release): publish",
-      "registry": "https://npm.pkg.github.com"
+      "message": "chore(release): publish"
     },
     "bootstrap": {
       "ignore": "component-*",
-      "npmClientArgs": ["--no-package-lock"]
-    }
-  },
-  "packages": ["packages/*"],
-  "changelog": {
-    "labels": {
-      "feast": ":feast: 新功能",
-      "fix": ":fix: 修复bug",
-      "doc": ":doc: 文档",
-      "style": ":style: 样式修改",
-      "refactor": ":refactor: 功能重构",
-      "chore": "chore: 构建过程或辅助工具的变动"
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
     }
   }
 }
