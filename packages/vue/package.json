@@ -1,0 +1,51 @@
+{
+  "name": "@luzhongk/vue",
+  "version": "1.0.0",
+  "description": "vue组件合集",
+  "keywords": [
+    "axios、vue"
+  ],
+  "scripts": {
+    "dev": "yarn serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:lib": "vue build src/request/index.js -t lib -d lib -n vue-request",
+    "lint": "vue-cli-service lint",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 --commit-path '.'"
+  },
+  "author": "luzhongkuan <luzhongk@126.com>",
+  "homepage": "https://github.com/kuan1/luzhongk/tree/master/packages/vue-request",
+  "license": "ISC",
+  "main": "lib/vue-request.umd.min.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuan1/luzhongk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kuan1/luzhongk/issues"
+  },
+  "dependencies": {
+    "@luzhongk/vue-feedback": "^1.0.0",
+    "@luzhongk/vue-request": "^1.0.0",
+    "core-js": "^3.3.2",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
