@@ -1,6 +1,7 @@
 {
   "name": "luzhongk",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development vuepress dev docs",
     "docs:build": "cross-env NODE_ENV=production vuepress build docs",
