@@ -14,7 +14,8 @@
 
 <script>
 import 'kuan-css'
-import { toast, loading } from '@packages/vue'
+// import { toast, loading } from '@packages/vue'
+import { toast, loading } from '@package/vue-feedback'
 
 export default {
   name: 'feedback',

@@ -12,6 +12,7 @@ export default class VueMonitor {
   }
   // 显示组件
   show(...args) {
+    if (typeof window === 'undefined') return
     if (!this.instance) {
       this.instance = new this.Component({
         el: document.createElement('div')

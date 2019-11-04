@@ -9,7 +9,7 @@
 
 <script>
 import 'kuan-css'
-import { createApi } from '@packages/vue'
+import { createApi } from '@packages/vue-request'
 const request = createApi()
 
 export default {

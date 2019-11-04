@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "vue组件合集",
   "keywords": [
-    "axios、vue"
+    "axios",
+    "vue"
   ],
   "scripts": {
     "dev": "yarn serve",
@@ -34,9 +35,8 @@
     "url": "https://github.com/kuan1/luzhongk/issues"
   },
   "dependencies": {
-    "@luzhongk/vue-feedback": "^1.0.0",
-    "@luzhongk/vue-request": "^1.0.0",
-    "axios": "^0.19.0",
+    "@luzhongk/vue-feedback": "^0.0.1",
+    "@luzhongk/vue-request": "^0.0.1",
     "core-js": "^3.3.2",
     "js-sha256": "^0.9.0",
     "vue": "^2.6.10"
