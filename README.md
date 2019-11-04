@@ -1,3 +1,9 @@
+#### 安装使用
+
+```bash
+yarn add @luzhongk/vue
+```
+
 #### git 提交规范
 
 - feat(新功能)
