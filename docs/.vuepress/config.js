@@ -1,16 +1,11 @@
 const path = require('path')
+const { mapPackage, resolve } = require('./mapPackage')
 
 const isDev = process.env.NODE_ENV === 'development'
 
-const resolve = (...dir) => {
-  return path.resolve(__dirname, '..', '..', 'packages', ...dir)
-}
-
 const alias = {
-  '@luzhongk/vue-feedback': resolve('vue-feedback', 'index'),
-  '@luzhongk/vue-request': resolve('vue-request', 'index'),
-  '@luzhongk/vue': resolve('vue', 'index'),
-  '@packages': resolve(),
+  ...mapPackage(),
+  '@packages': resolve('packages'),
   assets: path.resolve(__dirname, '..', 'assets')
 }
 
