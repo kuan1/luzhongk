@@ -2,6 +2,18 @@ const path = require('path')
 
 const isDev = process.env.NODE_ENV === 'development'
 
+const resolve = (...dir) => {
+  return path.resolve(__dirname, '..', '..', 'packages', ...dir)
+}
+
+const alias = {
+  '@luzhongk/vue-feedback': resolve('vue-feedback', 'index'),
+  '@luzhongk/vue-request': resolve('vue-request', 'index'),
+  '@luzhongk/vue': resolve('vue', 'index'),
+  '@packages': resolve(),
+  assets: path.resolve(__dirname, '..', 'assets')
+}
+
 module.exports = {
   title: 'luzhongk',
   description: 'vue组件和工具集合-卢忠宽',
@@ -25,10 +37,7 @@ module.exports = {
   configureWebpack: {
     resolve: {
       symlinks: false, // 使用npm link
-      alias: {
-        '@packages': path.resolve(__dirname, '..', '..', 'packages'),
-        assets: path.resolve(__dirname, '..', 'assets')
-      }
+      alias
     }
   },
   extraWatchFiles: ['../../packages'],

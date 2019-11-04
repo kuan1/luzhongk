@@ -3,9 +3,4 @@ import encrypt from './src/encrypt'
 import loading from './src/utils/loading'
 import toast from './src/utils/toast'
 
-export default {
-  createApi,
-  encrypt,
-  loading,
-  toast
-}
+export { createApi, encrypt, loading, toast }

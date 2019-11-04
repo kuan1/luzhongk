@@ -2199,22 +2199,20 @@ function encrypt(params = {}, encryptKey, isDebug) {
 
 
 
-/* harmony default export */ var vue_request = ({
-  createApi: createApi,
-  encrypt: encrypt,
-  loading: utils_loading,
-  toast: utils_toast
-});
+
 
 // CONCATENATED MODULE: ./index.js
 
 
-
+ // export {
+//   loading,
+//   toast
+// }
 // CONCATENATED MODULE: /Users/kuan/.nvm/versions/node/v10.13.0/lib/node_modules/@vue/cli-service-global/node_modules/@vue/cli-service/lib/commands/build/entry-lib-no-default.js
 /* concated harmony reexport loading */__webpack_require__.d(__webpack_exports__, "loading", function() { return src_loading; });
 /* concated harmony reexport toast */__webpack_require__.d(__webpack_exports__, "toast", function() { return src_toast; });
-/* concated harmony reexport createApi */__webpack_require__.d(__webpack_exports__, "createApi", function() { return /* Cannot get final name for export "createApi" in "./node_modules/@luzhongk/vue-request/index.js" (known exports: default, known reexports: ) */ undefined; });
-/* concated harmony reexport encrypt */__webpack_require__.d(__webpack_exports__, "encrypt", function() { return /* Cannot get final name for export "encrypt" in "./node_modules/@luzhongk/vue-request/index.js" (known exports: default, known reexports: ) */ undefined; });
+/* concated harmony reexport createApi */__webpack_require__.d(__webpack_exports__, "createApi", function() { return createApi; });
+/* concated harmony reexport encrypt */__webpack_require__.d(__webpack_exports__, "encrypt", function() { return encrypt; });
 
 
 

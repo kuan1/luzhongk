@@ -1,17 +1,13 @@
 {
   "version": "0.0.2-alpha.0",
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "command": {
     "publish": {
       "message": "chore(release): publish"
     },
     "bootstrap": {
-      "ignore": "component-*",
-      "npmClientArgs": [
-        "--no-package-lock"
-      ]
+      "ignore": "ignore/*",
+      "npmClientArgs": ["--no-package-lock"]
     }
   }
 }
