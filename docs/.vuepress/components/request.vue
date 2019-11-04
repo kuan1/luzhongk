@@ -9,8 +9,7 @@
 
 <script>
 import 'kuan-css'
-import { createApi } from '@packages/vue-request'
-const request = createApi()
+import { createApi } from '@packages/vue'
 
 export default {
   name: 'request',
@@ -21,6 +20,7 @@ export default {
   },
   methods: {
     async test() {
+      const request = createApi()
       const data = await request({
         url: 'https://www.luzhongkuan.cn/api/blog/article/218'
       })
