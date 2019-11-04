@@ -14,12 +14,7 @@ module.exports = {
     disableHostCheck: true
   },
   css: {
-    loaderOptions: {
-      // 给 sass-loader 传递选项
-      sass: {
-        data: `@import "@/styles/variables.scss";`
-      }
-    }
+    extract: false
   },
   // configureWebpack: config => {
   //   // config.entry.app = './index.js'

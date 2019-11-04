@@ -13,6 +13,9 @@ module.exports = {
     proxy: 'https://www.luzhongkuan.cn',
     disableHostCheck: true
   },
+  css: {
+    extract: false
+  },
   configureWebpack: {
     resolve: {
       symlinks: false // 使用npm link

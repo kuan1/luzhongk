@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["@luzhongk/vue-feedback"] = factory(require("vue"));
+		exports["vue-feedback"] = factory(require("vue"));
 	else
-		root["@luzhongk/vue-feedback"] = factory(root["Vue"]);
+		root["vue-feedback"] = factory(root["Vue"]);
 })((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__8bbf__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache

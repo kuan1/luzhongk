@@ -14,18 +14,8 @@ module.exports = {
     disableHostCheck: true
   },
   css: {
-    extract: false,
-    loaderOptions: {
-      // 给 sass-loader 传递选项
-      sass: {
-        data: `@import "@/styles/variables.scss";`
-      }
-    }
+    extract: false
   },
-  // configureWebpack: config => {
-  //   config.entry.app = './src/main1.js'
-  //   console.log(config.externals)
-  // },
   configureWebpack: {
     resolve: {
       symlinks: false // 使用npm link

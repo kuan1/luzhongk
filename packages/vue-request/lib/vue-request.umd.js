@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define(["js-sha256", "axios", "@luzhongk/vue-feedback"], factory);
 	else if(typeof exports === 'object')
-		exports["@luzhongk/vue-request"] = factory(require("js-sha256"), require("axios"), require("@luzhongk/vue-feedback"));
+		exports["vue-request"] = factory(require("js-sha256"), require("axios"), require("@luzhongk/vue-feedback"));
 	else
-		root["@luzhongk/vue-request"] = factory(root["js-sha256"], root["axios"], root["@luzhongk/vue-feedback"]);
+		root["vue-request"] = factory(root["js-sha256"], root["axios"], root["@luzhongk/vue-feedback"]);
 })((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__8252__, __WEBPACK_EXTERNAL_MODULE_cebe__, __WEBPACK_EXTERNAL_MODULE_e657__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache

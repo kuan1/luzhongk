@@ -10,14 +10,14 @@
     "dev": "yarn serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:lib": "vue build index.js -t lib -d lib",
+    "build:lib": "vue build index.js -t lib -d lib  -n vue-feedback",
     "lint": "vue-cli-service lint",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 --commit-path '.'"
   },
   "author": "luzhongkuan <luzhongk@126.com>",
   "homepage": "https://github.com/kuan1/luzhongk/tree/master/packages/vue-request",
   "license": "ISC",
-  "main": "lib/@luzhongk/vue-feedback.umd.min.js",
+  "main": "lib/vue-feedback.umd.min.js",
   "module": "index.js",
   "directories": {
     "lib": "lib"
