@@ -24,6 +24,7 @@ module.exports = {
   },
   configureWebpack: {
     resolve: {
+      symlinks: false, // 使用npm link
       alias: {
         '@packages': path.resolve(__dirname, '..', '..', 'packages'),
         assets: path.resolve(__dirname, '..', 'assets')
