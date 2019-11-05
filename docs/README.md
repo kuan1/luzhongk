@@ -14,3 +14,4 @@ yarn add @luzhongk/vue
 - [@luzhongk/vue-qrcode](./vue-qrcode)
 - [@luzhongk/vue-dialog](./vue-dialog)
 - [@luzhongk/vue-debug](./vue-debug)
+- [@luzhongk/vue-drawer](./vue-drawer)
