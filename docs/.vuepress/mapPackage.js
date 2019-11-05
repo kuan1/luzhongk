@@ -8,7 +8,7 @@ function resolve(dir) {
 function mapPackage() {
   const dirList = fs.readdirSync(resolve('packages'))
   return dirList.reduce((obj = {}, name) => {
-    obj[`@luzhongk/${name}`] = resolve(`packages/${name}/index.vue`)
+    obj[`@luzhongk/${name}`] = resolve(`packages/${name}/index.js`)
     return obj
   }, {})
 }

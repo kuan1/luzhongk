@@ -8,3 +8,4 @@ yarn add @luzhongk/vue
 
 - [@luzhongk/vue-feedback](./feedback)
 - [@luzhongk/vue-request](./request)
+- [@luzhongk/vue-qrcode](./qrcode)
