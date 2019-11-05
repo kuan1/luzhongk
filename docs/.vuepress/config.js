@@ -3,6 +3,8 @@ const { mapPackage, resolve } = require('./mapPackage')
 
 const isDev = process.env.NODE_ENV === 'development'
 
+const base = isDev ? '/' : '/luzhongk/'
+
 const alias = {
   ...mapPackage(),
   '@packages': resolve('packages'),
@@ -12,7 +14,8 @@ const alias = {
 module.exports = {
   title: 'luzhongk',
   description: 'vue组件和工具集合-卢忠宽',
-  base: isDev ? '/' : '/luzhongk/',
+  base,
+  head: [['link', { rel: 'stylesheet', href: `${base}style.css` }]],
   themeConfig: {
     sidebar: {
       // '/feedback/': ['/', '/feedback/']

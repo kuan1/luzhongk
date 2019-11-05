@@ -1,10 +1,9 @@
 <template>
   <div class="test-container">
-    <h2>@luzhongk/vue-qrcode</h2>
-    <div>
-      <qrcode :url="url"/>
-    </div>
-    <input class="k-btn" type="text" v-model="url">
+    <h2 class="title">@luzhongk/vue-qrcode</h2>
+    <qrcode :url="url"/>
+    <div class="split-line"></div>
+    <input class="k-input" type="text" v-model="url">
   </div>
 </template>
 
@@ -28,8 +27,5 @@ export default {
 .test-container {
   max-width: 1000px;
   margin: 0 auto;
-}
-.k-input {
-  text-align: left;
 }
 </style>

@@ -1,14 +1,10 @@
 <template>
-  <div class="feedback-container">
+  <div class="test-container">
     <h2 class="title">@luzhongk/vue-feedback</h2>
-    <div class="item">
-      <button @click="showLoading" class="k-btn k-btn-primary">loading</button>
-    </div>
-    <hr>
-    <div class="item">
-      <input class="k-input" type="text" placeholder="请输入提示信息" v-model="text">
-      <button @click="showToast" class="k-btn k-btn-primary">toast</button>
-    </div>
+    <button @click="showLoading" class="k-btn k-btn-primary">loading</button>
+    <div class="split-line"></div>
+    <input class="k-input" type="text" placeholder="请输入提示信息" v-model="text">
+    <button @click="showToast" class="k-btn k-btn-primary">toast</button>
   </div>
 </template>
 
@@ -20,7 +16,7 @@ export default {
   name: 'feedback',
   data() {
     return {
-      text: '提示信息'
+      text: 'hello, vue-feedback!!!'
     }
   },
   methods: {
@@ -36,17 +32,3 @@ export default {
   }
 }
 </script>
-
-<style scoped lang="less">
-.feedback-container {
-  max-width: 800px;
-  padding: 100px;
-  margin: 0 auto;
-}
-.title {
-  margin-bottom: 50px;
-}
-.item {
-  padding-bottom: 30px;
-}
-</style>

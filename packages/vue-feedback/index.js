@@ -6,6 +6,6 @@ export { loading, toast }
 export default {
   install(Vue) {
     Vue.prototype.$toast = toast
-    Vue.prototype.$loading = $loading
+    Vue.prototype.$loading = loading
   }
 }

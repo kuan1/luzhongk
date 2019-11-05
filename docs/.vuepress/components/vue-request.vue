@@ -1,9 +1,8 @@
 <template>
-  <div class="feedback-container">
+  <div class="test-container">
     <h2 class="title">@luzhongk/vue-request</h2>
-    <div class="item">
-      <button @click="test" class="k-btn k-btn-primary">test</button>
-    </div>
+    <button @click="test" class="k-btn k-btn-primary">test</button>
+    <div class="split-line"></div>
     <p>{{data}}</p>
   </div>
 </template>
@@ -32,17 +31,3 @@ export default {
   }
 }
 </script>
-
-<style scoped lang="less">
-.feedback-container {
-  max-width: 800px;
-  padding: 100px;
-  margin: 0 auto;
-}
-.title {
-  margin-bottom: 50px;
-}
-.item {
-  padding-bottom: 30px;
-}
-</style>
