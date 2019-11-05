@@ -1,0 +1,55 @@
+{
+  "name": "@luzhongk/vue-debug",
+  "version": "0.0.2",
+  "description": "vue",
+  "keywords": [
+    "vue",
+    "debug"
+  ],
+  "scripts": {
+    "dev": "yarn serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:lib": "vue build index.js -t lib -d lib  -n vue-feedback",
+    "lint": "vue-cli-service lint",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 --commit-path '.'"
+  },
+  "author": "luzhongkuan <luzhongk@126.com>",
+  "homepage": "https://github.com/kuan1/luzhongk/tree/master/packages/vue-request",
+  "license": "ISC",
+  "main": "lib/vue-dialog.umd.min.js",
+  "module": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuan1/luzhongk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kuan1/luzhongk/issues"
+  },
+  "dependencies": {
+    "core-js": "^3.3.2",
+    "kuan-css": "^1.0.5",
+    "vconsole": "^3.3.4",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
