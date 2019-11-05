@@ -1,5 +1,5 @@
 {
-  "name": "@luzhongk/kuan-vue",
+  "name": "@luzhongk/vue",
   "version": "0.0.3",
   "description": "vue组件合集",
   "keywords": [
@@ -10,7 +10,7 @@
     "dev": "yarn serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:lib": "vue build index.js -t lib -d lib -n vue",
+    "build:lib": "vue build index.js -t lib -d lib -n kuan-vue",
     "lint": "vue-cli-service lint",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 --commit-path '.'"
   },

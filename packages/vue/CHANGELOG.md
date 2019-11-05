@@ -1,15 +1,10 @@
 ## [0.0.3](https://github.com/kuan1/luzhongk/compare/v0.0.2...v0.0.3) (2019-11-05)
 
 
-### Bug Fixes
-
-* **vue-feedback:** vue提示写入console.log ([292cec3](https://github.com/kuan1/luzhongk/commit/292cec39266ccdbf7d1cb21ab12ecd8cda444033))
-
-
 ### Features
 
-* vue-qrcode ([fd543fa](https://github.com/kuan1/luzhongk/commit/fd543fa206a78f299d10d69fc6acc66754b8e0b4))
 * 准备开发vue-dialog ([c6cdb63](https://github.com/kuan1/luzhongk/commit/c6cdb63f62f88c68939c7e035a11cb8f204e3cd7))
+* **vue-debug:** vue调试 ([cbedda7](https://github.com/kuan1/luzhongk/commit/cbedda7ffca1af507f9c24df36eaa0aa673aa910))
 
 
 
@@ -31,11 +26,6 @@
 
 
 ## [0.0.1-alpha.0](https://github.com/kuan1/luzhongk/compare/1.0.1...v0.0.1-alpha.0) (2019-11-03)
-
-
-### Features
-
-* **vue-feedback:** 项目初始化 ([d25412f](https://github.com/kuan1/luzhongk/commit/d25412fb0004e586af1cb59f766ed95bf3847411))
 
 
 
