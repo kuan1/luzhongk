@@ -8,6 +8,7 @@ function toast(text, time = 2000) {
   if (!monitor) {
     monitor = new Monitor(Toast)
   }
+  if (text) console.log('Toast: ', text)
   monitor.show(text)
   if (timer) clearTimeout(timer)
   timer = setTimeout(() => {
