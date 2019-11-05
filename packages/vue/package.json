@@ -1,5 +1,5 @@
 {
-  "name": "@luzhongk/vue",
+  "name": "@luzhongk/kuan-vue",
   "version": "0.0.2",
   "description": "vue组件合集",
   "keywords": [
@@ -17,7 +17,7 @@
   "author": "luzhongkuan <luzhongk@126.com>",
   "homepage": "https://github.com/kuan1/luzhongk/tree/master/packages/vue-request",
   "license": "ISC",
-  "main": "lib/vue.umd.min.js",
+  "main": "lib/kuan-vue.umd.min.js",
   "module": "index.js",
   "directories": {
     "lib": "lib"
@@ -36,6 +36,8 @@
     "url": "https://github.com/kuan1/luzhongk/issues"
   },
   "dependencies": {
+    "@luzhongk/vue-debug": "^0.0.2",
+    "@luzhongk/vue-dialog": "^0.0.2",
     "@luzhongk/vue-feedback": "^0.0.2",
     "@luzhongk/vue-qrcode": "^0.0.2",
     "@luzhongk/vue-request": "^0.0.2",

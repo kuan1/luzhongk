@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "2db7");
+/******/ 	return __webpack_require__(__webpack_require__.s = "13f6");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -244,116 +244,7 @@ exports.f = __webpack_require__("2b5e") ? Object.defineProperty : function defin
 
 /***/ }),
 
-/***/ "2350":
-/***/ (function(module, exports) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function(useSourceMap) {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
-			if(item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
-			} else {
-				return content;
-			}
-		}).join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
-
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
-
-
-/***/ }),
-
-/***/ "26ba":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("552a");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__("499e").default
-var update = add("7fdb2ebd", content, true, {"sourceMap":false,"shadowMode":false});
-
-/***/ }),
-
-/***/ "2b5e":
-/***/ (function(module, exports, __webpack_require__) {
-
-// Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__("5558")(function () {
-  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
-});
-
-
-/***/ }),
-
-/***/ "2db7":
+/***/ "13f6":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -767,6 +658,7 @@ function toast(text) {
     monitor = new VueMonitor_VueMonitor(Toast);
   }
 
+  if (text) console.log('Toast: ', text);
   monitor.show(text);
   if (timer) clearTimeout(timer);
   timer = setTimeout(function () {
@@ -779,11 +671,128 @@ function toast(text) {
 
 
 
-// CONCATENATED MODULE: /Users/kuan/.nvm/versions/node/v10.13.0/lib/node_modules/@vue/cli-service-global/node_modules/@vue/cli-service/lib/commands/build/entry-lib-no-default.js
+/* harmony default export */ var index = ({
+  install: function install(Vue) {
+    Vue.prototype.$toast = src_toast;
+    Vue.prototype.$loading = loading;
+  }
+});
+// CONCATENATED MODULE: /Users/kuan/.nvm/versions/node/v10.13.0/lib/node_modules/@vue/cli-service-global/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 /* concated harmony reexport loading */__webpack_require__.d(__webpack_exports__, "loading", function() { return loading; });
 /* concated harmony reexport toast */__webpack_require__.d(__webpack_exports__, "toast", function() { return src_toast; });
 
 
+/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (index);
+
+
+
+/***/ }),
+
+/***/ "2350":
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+
+/***/ "26ba":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("552a");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("499e").default
+var update = add("7fdb2ebd", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
+/***/ "2b5e":
+/***/ (function(module, exports, __webpack_require__) {
+
+// Thank's IE8 for his funny defineProperty
+module.exports = !__webpack_require__("5558")(function () {
+  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
+});
 
 
 /***/ }),
@@ -1080,7 +1089,7 @@ exports = module.exports = __webpack_require__("2350")(false);
 
 
 // module
-exports.push([module.i, ".loading-container-monitor[data-v-4d95f3fe]{position:fixed;left:0;top:0;width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;z-index:5000;-webkit-transform:translateZ(.01rem);transform:translateZ(.01rem)}.loading-container-monitor .loading[data-v-4d95f3fe]{padding:.8em 1em;background-color:rgba(0,0,0,.8);border-radius:5px}.loading-container-monitor .spinner[data-v-4d95f3fe]{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-bottom:3px}.loading-container-monitor .spinner svg[data-v-4d95f3fe]{width:28px;height:28px;stroke:#fff;fill:#fff}.loading-container-monitor .tips[data-v-4d95f3fe]{font-size:14px;color:#fff;text-align:center;word-break:break-all}.loading-container-monitor .animated[data-v-4d95f3fe]{-webkit-animation-duration:.4s;animation-duration:.4s}.loading-container-monitor .animated.fadeIn[data-v-4d95f3fe]{-webkit-animation-name:fadeIn-data-v-4d95f3fe;animation-name:fadeIn-data-v-4d95f3fe}@-webkit-keyframes fadeIn-data-v-4d95f3fe{0%{opacity:0}to{opacity:1}}@keyframes fadeIn-data-v-4d95f3fe{0%{opacity:0}to{opacity:1}}", ""]);
+exports.push([module.i, ".loading-container-monitor[data-v-4d95f3fe]{position:fixed;left:0;top:0;width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;z-index:5000;-webkit-transform:translateZ(.01rem);transform:translateZ(.01rem)}.loading-container-monitor .loading[data-v-4d95f3fe]{padding:.8em 1em;background-color:rgba(0,0,0,.8);border-radius:3px}.loading-container-monitor .spinner[data-v-4d95f3fe]{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-bottom:3px}.loading-container-monitor .spinner svg[data-v-4d95f3fe]{width:28px;height:28px;stroke:#fff;fill:#fff}.loading-container-monitor .tips[data-v-4d95f3fe]{font-size:14px;color:#fff;text-align:center;word-break:break-all}.loading-container-monitor .animated[data-v-4d95f3fe]{-webkit-animation-duration:.4s;animation-duration:.4s}.loading-container-monitor .animated.fadeIn[data-v-4d95f3fe]{-webkit-animation-name:fadeIn-data-v-4d95f3fe;animation-name:fadeIn-data-v-4d95f3fe}@-webkit-keyframes fadeIn-data-v-4d95f3fe{0%{opacity:0}to{opacity:1}}@keyframes fadeIn-data-v-4d95f3fe{0%{opacity:0}to{opacity:1}}", ""]);
 
 // exports
 
@@ -1177,7 +1186,7 @@ exports = module.exports = __webpack_require__("2350")(false);
 
 
 // module
-exports.push([module.i, ".loading-container-monitor[data-v-df52b2d6]{position:fixed;left:0;top:0;width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;z-index:5000;-webkit-transform:translateZ(.01rem);transform:translateZ(.01rem)}.loading-container-monitor .loading[data-v-df52b2d6]{padding:.8em 1em;background-color:rgba(0,0,0,.8);border-radius:5px}.loading-container-monitor .spinner[data-v-df52b2d6]{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-bottom:3px}.loading-container-monitor .spinner svg[data-v-df52b2d6]{width:28px;height:28px;stroke:#fff;fill:#fff}.loading-container-monitor .tips[data-v-df52b2d6]{font-size:14px;color:#fff;text-align:center;word-break:break-all}.loading-container-monitor .animated[data-v-df52b2d6]{-webkit-animation-duration:.4s;animation-duration:.4s}.loading-container-monitor .animated.fadeIn[data-v-df52b2d6]{-webkit-animation-name:fadeIn-data-v-df52b2d6;animation-name:fadeIn-data-v-df52b2d6}@-webkit-keyframes fadeIn-data-v-df52b2d6{0%{opacity:0}to{opacity:1}}@keyframes fadeIn-data-v-df52b2d6{0%{opacity:0}to{opacity:1}}", ""]);
+exports.push([module.i, ".loading-container-monitor[data-v-df52b2d6]{position:fixed;left:0;top:0;width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;z-index:5000;-webkit-transform:translateZ(.01rem);transform:translateZ(.01rem)}.loading-container-monitor .loading[data-v-df52b2d6]{padding:.8em 1em;background-color:rgba(0,0,0,.8);border-radius:3px}.loading-container-monitor .spinner[data-v-df52b2d6]{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-bottom:3px}.loading-container-monitor .spinner svg[data-v-df52b2d6]{width:28px;height:28px;stroke:#fff;fill:#fff}.loading-container-monitor .tips[data-v-df52b2d6]{font-size:14px;color:#fff;text-align:center;word-break:break-all}.loading-container-monitor .animated[data-v-df52b2d6]{-webkit-animation-duration:.4s;animation-duration:.4s}.loading-container-monitor .animated.fadeIn[data-v-df52b2d6]{-webkit-animation-name:fadeIn-data-v-df52b2d6;animation-name:fadeIn-data-v-df52b2d6}@-webkit-keyframes fadeIn-data-v-df52b2d6{0%{opacity:0}to{opacity:1}}@keyframes fadeIn-data-v-df52b2d6{0%{opacity:0}to{opacity:1}}", ""]);
 
 // exports
 
