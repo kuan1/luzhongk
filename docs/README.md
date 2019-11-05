@@ -6,6 +6,6 @@ yarn add @luzhongk/vue
 
 ### 使用
 
-- [@luzhongk/vue-feedback](./feedback)
-- [@luzhongk/vue-request](./request)
-- [@luzhongk/vue-qrcode](./qrcode)
+- [@luzhongk/vue-feedback](./vue-feedback)
+- [@luzhongk/vue-request](./vue-request)
+- [@luzhongk/vue-qrcode](./vue-qrcode)

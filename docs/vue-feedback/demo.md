@@ -1,4 +1,4 @@
 ---
 navbar: false
-layout: request
+layout: vue-feedback
 ---
