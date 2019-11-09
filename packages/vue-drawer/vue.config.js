@@ -24,5 +24,13 @@ module.exports = {
       app: './index.js'
     }
   },
+  chainWebpack: config => {
+    const svgRule = config.module.rule('svg')
+
+    svgRule.uses.clear()
+
+    // add replacement loader(s)
+    svgRule.use('url-loader').loader('url-loader')
+  },
   productionSourceMap: false
 }

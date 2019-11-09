@@ -1,9 +1,42 @@
 // 大屏幕
 @media screen and (min-width: @mobile-width) {
-  .vue-drawer-header {
-    display: flex;
-    .nav-toggle-bar {
-      display: none;
+  .vue-drawer-outer {
+    .vue-drawer-header {
+      display: flex;
+      justify-content: space-between;
+      .nav-toggle-bar {
+        display: none;
+      }
+    }
+
+    .drawer-nav {
+      font-size: 16px;
+      & > .nav-ul {
+        display: flex;
+        & > li {
+          display: flex;
+          align-items: center;
+          height: @header-height;
+          margin-left: 25px;
+          & > .link-wrap {
+            line-height: 50px;
+          }
+        }
+      }
+      li {
+        position: relative;
+      }
+      .transition-container {
+        position: absolute;
+        top: 48px;
+        white-space: nowrap;
+        background: white;
+        border: 1px solid #eee;
+        border-radius: 3px;
+        .nav-ul {
+          padding: 0.6em;
+        }
+      }
     }
   }
 }

@@ -1,18 +1,17 @@
-## @luzhongk/vue-feedback
+## @luzhongk/vue-drawer
+
+> 一个 vue 的抽屉组件
 
 ## 安装
 
 ```bash
-yarn add @luzhongk/vue-feedback
+yarn add @luzhongk/vue-drawer
 ```
 
 ## 使用
 
 ```js
-import { toast, loading } from '@luzhongk/vue-feedback'
-
-toast('1234')
-
-loading.show()
-loading.hide()
+import VueDrawer from '@luzhongk/vue-drawer'
 ```
+
+## [示例](./demo)
