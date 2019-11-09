@@ -38,9 +38,20 @@ function getJson(name = '插件名字', description = '插件描述') {
       url: 'https://github.com/kuan1/luzhongk/issues'
     },
     dependencies: {
+      'core-js': '^3.3.2',
       vue: '^2.6.10'
     },
-    devDependencies: {}
+    devDependencies: {
+      '@vue/cli-plugin-babel': '^3.7.0',
+      '@vue/cli-plugin-eslint': '^3.7.0',
+      '@vue/cli-service': '^3.7.0',
+      'babel-eslint': '^10.0.1',
+      eslint: '^5.16.0',
+      'eslint-plugin-vue': '^5.0.0',
+      less: '^3.10.3',
+      'less-loader': '^5.0.0',
+      'vue-template-compiler': '^2.5.21'
+    }
   }
 }
 
