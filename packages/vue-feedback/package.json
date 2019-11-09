@@ -18,7 +18,6 @@
   "homepage": "https://github.com/kuan1/luzhongk/tree/master/packages/vue-request",
   "license": "ISC",
   "main": "lib/vue-feedback.umd.min.js",
-  "module": "index.js",
   "directories": {
     "lib": "lib"
   },
