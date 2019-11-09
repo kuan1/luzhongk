@@ -1,6 +1,12 @@
 <template>
   <div>
-    <vue-drawer/>
+    <vue-drawer>
+      <template #title>
+        <h1 class="title">
+          <a href="https://www.luzhongkuan.cn/">Kuan's Blog</a>
+        </h1>
+      </template>
+    </vue-drawer>
   </div>
 </template>
 
@@ -14,5 +20,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less" scoped>
+.title {
+  font-size: 16px;
+}
 </style>

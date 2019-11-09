@@ -1,0 +1,98 @@
+@import './variable.less';
+
+// 小屏幕
+@media screen and (max-width: @mobile-width - 1px) {
+  body {
+    transition: all 0.3s linear;
+    position: relative;
+  }
+  .vue-drawer-header {
+    justify-content: center;
+  }
+  // 切换按钮
+  .nav-toggle-bar {
+    width: @toggle-bar-height + 4px;
+    height: @toggle-bar-height;
+    position: absolute;
+    opacity: 0.6;
+    cursor: pointer;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+    margin: auto;
+    transition: left 0.3s ease-in-out;
+    z-index: @z-index + 1;
+    .nav-bar-item {
+      background-color: @font-color;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      transition: 0.4s;
+      transform-origin: 0;
+      border-radius: 2px;
+      transform: rotate(0);
+      opacity: 1;
+      &:nth-child(1) {
+        top: 0;
+      }
+      &:nth-child(2) {
+        top: (@toggle-bar-height - 2px) / 2;
+      }
+      &:nth-child(3) {
+        top: @toggle-bar-height - 2px;
+      }
+    }
+  }
+  // 展开按钮
+  .vue-drawer-collapse {
+    min-height: 100vh;
+    transform: translateX(@drawer-width);
+    overflow-x: hidden;
+    .drawer-nav-container .drawer-mask {
+      opacity: 1;
+      visibility: visible;
+    }
+    .nav-toggle-bar {
+      .nav-bar-item {
+        background-color: #fff;
+        &:nth-child(1) {
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  // 导航抽屉样式
+  .drawer-nav-container {
+    position: relative;
+    z-index: @z-index;
+    .drawer-nav {
+      position: fixed;
+      top: 0;
+      right: 100%;
+      width: @drawer-width;
+      height: 100%;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 30px 15px;
+      box-sizing: border-box;
+    }
+    .drawer-mask {
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
