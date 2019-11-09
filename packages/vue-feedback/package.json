@@ -15,7 +15,7 @@
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 --commit-path '.'"
   },
   "author": "luzhongkuan <luzhongk@126.com>",
-  "homepage": "https://github.com/kuan1/luzhongk/tree/master/packages/vue-request",
+  "homepage": "https://github.com/kuan1/luzhongk/tree/master/packages/vue-feedback",
   "license": "ISC",
   "main": "lib/vue-feedback.umd.min.js",
   "directories": {
