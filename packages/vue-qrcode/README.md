@@ -1,18 +1,29 @@
-## @luzhongk/vue-feedback
+## @luzhongk/vue-qrcode
+
+> qrcode 的 vue 组件
 
 ## 安装
 
 ```bash
-yarn add @luzhongk/vue-feedback
+yarn add @luzhongk/vue-qrcode
 ```
 
 ## 使用
 
 ```js
-import { toast, loading } from '@luzhongk/vue-feedback'
+import Qrcode from '@luzhongk/vue-qrcode'
 
-toast('1234')
-
-loading.show()
-loading.hide()
+export default {
+  components: {
+    Qrcode
+  }
+}
 ```
+
+```html
+<div>
+  <qrcode :width="100" :height="100" />
+</div>
+```
+
+## [示例](./demo)

@@ -44,7 +44,6 @@ export default {
   },
   methods: {
     handleClick(name) {
-      console.log(name)
       this.visible = false
     }
   }

@@ -1,18 +1,29 @@
-## @luzhongk/vue-feedback
+## @luzhongk/vue-debug
+
+> 一个简单的 vue 调试组件，使用 vconsole
 
 ## 安装
 
 ```bash
-yarn add @luzhongk/vue-feedback
+yarn add @luzhongk/vue-debug
 ```
 
 ## 使用
 
 ```js
-import { toast, loading } from '@luzhongk/vue-feedback'
+import VueDebug from '@luzhongk/vue-debug'
 
-toast('1234')
-
-loading.show()
-loading.hide()
+export default {
+  components: {
+    VueDebug
+  }
+}
 ```
+
+```html
+<div>
+  <vue-debug />
+</div>
+```
+
+## [示例](./demo)
