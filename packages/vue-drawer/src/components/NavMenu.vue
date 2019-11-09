@@ -35,8 +35,6 @@
 </template>
 
 <script>
-import getEleSize from '../utils/getEleSize.js'
-
 import MyLink from './MyLink.vue'
 import TransitionView from './TransitionView.vue'
 
