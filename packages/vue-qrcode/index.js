@@ -1,7 +1,7 @@
 import Qrcode from './src/Qrcode.vue'
 
 Qrcode.install = Vue => {
-  Vue.component('qrcode', Qrcode)
+  Vue.component('vue-qrcode', Qrcode)
 }
 
 export default Qrcode
