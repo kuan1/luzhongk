@@ -1,3 +1,12 @@
+## [0.0.4](https://github.com/kuan1/luzhongk/compare/v0.0.3...v0.0.4) (2019-11-09)
+
+
+### Bug Fixes
+
+* drawer、qrcode ([38678ce](https://github.com/kuan1/luzhongk/commit/38678ce593a019ccd5cb2b6ba7e3c9bed216c648))
+
+
+
 ## [0.0.3](https://github.com/kuan1/luzhongk/compare/v0.0.2...v0.0.3) (2019-11-05)
 
 

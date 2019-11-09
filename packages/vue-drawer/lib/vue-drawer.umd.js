@@ -684,7 +684,7 @@ var VueDrawer_component = Object(componentNormalizer["a" /* default */])(
 
 
 VueDrawer.install = function (Vue) {
-  Vue.component('vue-dialog', VueDrawer);
+  Vue.component('vue-drawer', VueDrawer);
 };
 
 /* harmony default export */ var index = (VueDrawer);

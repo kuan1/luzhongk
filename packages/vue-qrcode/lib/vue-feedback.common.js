@@ -630,7 +630,7 @@ var component = normalizeComponent(
 
 
 Qrcode.install = function (Vue) {
-  Vue.component('qrcode', Qrcode);
+  Vue.component('vue-qrcode', Qrcode);
 };
 
 /* harmony default export */ var index = (Qrcode);
