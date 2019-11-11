@@ -17,7 +17,7 @@
   "author": "luzhongkuan <luzhongk@126.com>",
   "homepage": "https://github.com/kuan1/luzhongk/tree/master/packages/vue-debug",
   "license": "ISC",
-  "main": "lib/vue-dialog.umd.min.js",
+  "main": "lib/vue-debug.umd.min.js",
   "directories": {
     "lib": "lib"
   },
