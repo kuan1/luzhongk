@@ -1,4 +1,14 @@
-# [0.0.0](https://github.com/kuan1/luzhongk/compare/v0.0.3...v0.0.0) (2019-11-09)
+# [0.0.0](https://github.com/kuan1/luzhongk/compare/v0.0.4...v0.0.0) (2019-11-11)
+
+
+### Bug Fixes
+
+* **vue-debug:** package.json ([b397ba0](https://github.com/kuan1/luzhongk/commit/b397ba0d683a6929ef55ff4afe7117a1db228cab))
+* **vue-request:** package.json ([99a4556](https://github.com/kuan1/luzhongk/commit/99a45568580fe045c926ce315d62958251afe8a0))
+
+
+
+## [0.0.4](https://github.com/kuan1/luzhongk/compare/v0.0.3...v0.0.4) (2019-11-09)
 
 
 ### Bug Fixes
