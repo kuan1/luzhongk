@@ -3,7 +3,6 @@
   "version": "0.0.5",
   "description": "vue组件合集",
   "keywords": [
-    "axios",
     "vue"
   ],
   "scripts": {

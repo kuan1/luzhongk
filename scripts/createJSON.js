@@ -9,7 +9,7 @@ function getJson(name = '插件名字', description = '插件描述') {
     name: `@luzhongk/${name}`,
     version: '0.0.4',
     description,
-    keywords: ['axios', 'vue'],
+    keywords: ['vue'],
     scripts: {
       dev: 'yarn serve',
       serve: 'vue-cli-service serve',
