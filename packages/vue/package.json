@@ -1,6 +1,6 @@
 {
   "name": "@luzhongk/vue",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "vue组件合集",
   "keywords": [
     "vue"
@@ -34,12 +34,12 @@
     "url": "https://github.com/kuan1/luzhongk/issues"
   },
   "dependencies": {
-    "@luzhongk/vue-debug": "^0.0.5",
-    "@luzhongk/vue-dialog": "^0.0.5",
-    "@luzhongk/vue-drawer": "^0.0.5",
-    "@luzhongk/vue-feedback": "^0.0.5",
-    "@luzhongk/vue-qrcode": "^0.0.5",
-    "@luzhongk/vue-request": "^0.0.5",
+    "@luzhongk/vue-debug": "^0.0.6",
+    "@luzhongk/vue-dialog": "^0.0.6",
+    "@luzhongk/vue-drawer": "^0.0.6",
+    "@luzhongk/vue-feedback": "^0.0.6",
+    "@luzhongk/vue-qrcode": "^0.0.6",
+    "@luzhongk/vue-request": "^0.0.6",
     "core-js": "^3.3.2",
     "js-sha256": "^0.9.0",
     "vue": "^2.6.10"
