@@ -193,17 +193,14 @@ var staticRenderFns = []
 // EXTERNAL MODULE: /Users/kuan/.nvm/versions/node/v10.13.0/lib/node_modules/@vue/cli-service-global/node_modules/core-js/modules/es6.regexp.split.js
 var es6_regexp_split = __webpack_require__("f5d1");
 
-// EXTERNAL MODULE: ./node_modules/vconsole/dist/vconsole.min.js
-var vconsole_min = __webpack_require__("3a34");
-var vconsole_min_default = /*#__PURE__*/__webpack_require__.n(vconsole_min);
-
 // CONCATENATED MODULE: ./src/utils/vconsole.js
-
 /* harmony default export */ var vconsole = ({
-  vConsole: '',
+  vConsole: "",
   init: function init() {
     if (!this.vConsole) {
-      this.vConsole = new vconsole_min_default.a();
+      var VConsole = __webpack_require__("3a34");
+
+      this.vConsole = new VConsole();
     }
 
     return this.vConsole;
@@ -211,7 +208,7 @@ var vconsole_min_default = /*#__PURE__*/__webpack_require__.n(vconsole_min);
   destroy: function destroy() {
     if (this.vConsole) {
       this.vConsole.destroy();
-      this.vConsole = '';
+      this.vConsole = "";
     }
 
     return null;

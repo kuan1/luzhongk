@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["vue-feedback"] = factory();
+		exports["vue-qrcode"] = factory();
 	else
-		root["vue-feedback"] = factory();
+		root["vue-qrcode"] = factory();
 })((typeof self !== 'undefined' ? self : this), function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache

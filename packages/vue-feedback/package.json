@@ -1,7 +1,7 @@
 {
   "name": "@luzhongk/vue-feedback",
   "version": "0.0.5",
-  "description": "axios在vue中使用",
+  "description": "vue toast loading",
   "keywords": [
     "vue",
     "feeback"

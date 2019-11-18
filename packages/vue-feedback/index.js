@@ -1,11 +1,11 @@
-import loading from './src/loading'
-import toast from './src/toast'
+import loading from "./src/loading";
+import toast from "./src/toast";
 
-export { loading, toast }
+export { loading, toast };
 
 export default {
   install(Vue) {
-    Vue.prototype.$toast = toast
-    Vue.prototype.$loading = loading
+    Vue.prototype.$toast = toast;
+    Vue.prototype.$loading = loading;
   }
-}
+};

@@ -1,18 +1,17 @@
-import VConsole from 'vconsole'
-
 export default {
-  vConsole: '',
+  vConsole: "",
   init() {
     if (!this.vConsole) {
-      this.vConsole = new VConsole()
+      const VConsole = require("vconsole");
+      this.vConsole = new VConsole();
     }
-    return this.vConsole
+    return this.vConsole;
   },
   destroy() {
     if (this.vConsole) {
-      this.vConsole.destroy()
-      this.vConsole = ''
+      this.vConsole.destroy();
+      this.vConsole = "";
     }
-    return null
+    return null;
   }
-}
+};
