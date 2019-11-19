@@ -9,10 +9,12 @@ yarn add @luzhongk/vue-feedback
 ## 使用
 
 ```js
-import { toast, loading } from '@luzhongk/vue-feedback'
+import { toast, loading } from "@luzhongk/vue-feedback";
 
-toast('1234')
+toast("1234");
 
-loading.show()
-loading.hide()
+loading.show();
+loading.hide();
 ```
+
+## [示例](https://www.kuan1.top/luzhongk/vue-feedback/demo.html)

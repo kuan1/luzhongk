@@ -11,13 +11,13 @@ yarn add @luzhongk/vue-debug
 ## 使用
 
 ```js
-import VueDebug from '@luzhongk/vue-debug'
+import VueDebug from "@luzhongk/vue-debug";
 
 export default {
   components: {
     VueDebug
   }
-}
+};
 ```
 
 ```html
@@ -26,4 +26,4 @@ export default {
 </div>
 ```
 
-## [示例](./demo)
+## [示例](https://www.kuan1.top/luzhongk/vue-debug/demo.html)

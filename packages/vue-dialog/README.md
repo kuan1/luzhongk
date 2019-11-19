@@ -11,7 +11,7 @@ yarn add @luzhongk/vue-dialog
 ## 使用
 
 ```js
-import VueDialog from '@luzhongk/vue-dialog'
+import VueDialog from "@luzhongk/vue-dialog";
 
 export default {
   components: {
@@ -20,9 +20,9 @@ export default {
   data() {
     return {
       visible: false
-    }
+    };
   }
-}
+};
 ```
 
 ```html
@@ -31,4 +31,4 @@ export default {
 </div>
 ```
 
-## [示例](./demo)
+## [示例](https://www.kuan1.top/luzhongk/vue-dialog/demo.html)

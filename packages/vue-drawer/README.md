@@ -30,7 +30,7 @@ yarn add @luzhongk/vue-drawer
 </template>
 
 <script>
-  import { VueDrawer } from '@packages/vue/index'
+  import { VueDrawer } from "@packages/vue/index";
 
   export default {
     components: {
@@ -39,33 +39,33 @@ yarn add @luzhongk/vue-drawer
     data() {
       return {
         data: [
-          { name: '首页', to: { path: '/aaa' } },
-          { name: '百度一下' },
-          { name: '百度二下' },
-          { name: '百度三下' },
+          { name: "首页", to: { path: "/aaa" } },
+          { name: "百度一下" },
+          { name: "百度二下" },
+          { name: "百度三下" },
           {
-            name: '资源列表',
+            name: "资源列表",
             children: [
-              { name: '首页二', to: { path: '/bbb' } },
-              { name: '百度四下' },
-              { name: '百度五下' }
+              { name: "首页二", to: { path: "/bbb" } },
+              { name: "百度四下" },
+              { name: "百度五下" }
             ]
           },
-          { name: '首页三', to: { path: '/ccc' } },
-          { name: '百度六下' },
-          { name: '百度七下' },
-          { name: '百度八下' }
+          { name: "首页三", to: { path: "/ccc" } },
+          { name: "百度六下" },
+          { name: "百度七下" },
+          { name: "百度八下" }
         ],
         visible: false,
-        active: '百度一下1'
-      }
+        active: "百度一下1"
+      };
     },
     methods: {
       handleClick(name) {
-        this.visible = false
+        this.visible = false;
       }
     }
-  }
+  };
 </script>
 
 <style lang="less" scoped>
@@ -75,4 +75,4 @@ yarn add @luzhongk/vue-drawer
 </style>
 ```
 
-## [示例](./demo)
+## [示例](https://www.kuan1.top/luzhongk/vue-drawer/demo.html)

@@ -11,13 +11,13 @@ yarn add @luzhongk/vue-qrcode
 ## 使用
 
 ```js
-import Qrcode from '@luzhongk/vue-qrcode'
+import Qrcode from "@luzhongk/vue-qrcode";
 
 export default {
   components: {
     Qrcode
   }
-}
+};
 ```
 
 ```html
@@ -26,4 +26,4 @@ export default {
 </div>
 ```
 
-## [示例](./demo)
+## [示例](https://www.kuan1.top/luzhongk/vue-qrcode/demo.html)
