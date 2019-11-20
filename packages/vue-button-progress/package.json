@@ -1,7 +1,7 @@
 {
-  "name": "@luzhongk/vue",
+  "name": "@luzhongk/vue-button-progress",
   "version": "0.0.6",
-  "description": "vue组件合集",
+  "description": "一个vue的进度动画按钮",
   "keywords": [
     "vue"
   ],
@@ -9,19 +9,20 @@
     "dev": "yarn serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:lib": "vue build index.js -t lib -d lib -n kuan-vue",
+    "build:lib": "vue build index.js -t lib -d lib -n vue-button-progress",
     "lint": "vue-cli-service lint",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 --commit-path '.'"
   },
   "author": "luzhongkuan <luzhongk@126.com>",
-  "homepage": "https://github.com/kuan1/luzhongk/tree/master/packages/vue",
+  "homepage": "https://github.com/kuan1/luzhongk/tree/master/packages/vue-button-progress",
   "license": "ISC",
-  "main": "lib/kuan-vue.umd.min.js",
+  "main": "lib/vue-button-progress.umd.min.js",
   "directories": {
     "lib": "lib"
   },
   "files": [
-    "lib"
+    "lib",
+    "src"
   ],
   "publishConfig": {
     "access": "public"
@@ -34,15 +35,7 @@
     "url": "https://github.com/kuan1/luzhongk/issues"
   },
   "dependencies": {
-    "@luzhongk/vue-button-progress": "^0.0.6",
-    "@luzhongk/vue-debug": "^0.0.6",
-    "@luzhongk/vue-dialog": "^0.0.6",
-    "@luzhongk/vue-drawer": "^0.0.6",
-    "@luzhongk/vue-feedback": "^0.0.6",
-    "@luzhongk/vue-qrcode": "^0.0.6",
-    "@luzhongk/vue-request": "^0.0.6",
     "core-js": "^3.3.2",
-    "js-sha256": "^0.9.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -52,7 +45,8 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
     "vue-template-compiler": "^2.5.21"
-  },
-  "gitHead": "e75eba5d85dae1335f3f76cfcd61794bee0af66d"
+  }
 }
