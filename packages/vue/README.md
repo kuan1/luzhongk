@@ -4,6 +4,6 @@
 
 ## Usage
 
-```
-npm publish
+```bash
+yarn add @luzhongk/vue
 ```
