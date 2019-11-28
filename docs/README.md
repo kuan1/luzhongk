@@ -15,4 +15,4 @@ yarn add @luzhongk/vue
 - [@luzhongk/vue-dialog](./vue-dialog)
 - [@luzhongk/vue-debug](./vue-debug)
 - [@luzhongk/vue-drawer](./vue-drawer)
-- [@luzhongk/vue-button-progress](./vue-button-progress)
+- [@luzhongk/vue-shape](./vue-shape)

@@ -1,6 +1,7 @@
-import createApi from './src/createApi'
-import encrypt from './src/encrypt'
-import loading from './src/utils/loading'
-import toast from './src/utils/toast'
+import VueShape from "./src/index.vue";
 
-export { createApi, encrypt, loading, toast }
+VueShape.install = Vue => {
+  Vue.component("vue-shape", VueShape);
+};
+
+export default VueShape;

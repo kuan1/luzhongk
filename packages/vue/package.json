@@ -34,13 +34,13 @@
     "url": "https://github.com/kuan1/luzhongk/issues"
   },
   "dependencies": {
-    "@luzhongk/vue-button-progress": "^0.0.6",
     "@luzhongk/vue-debug": "^0.0.6",
     "@luzhongk/vue-dialog": "^0.0.6",
     "@luzhongk/vue-drawer": "^0.0.6",
     "@luzhongk/vue-feedback": "^0.0.6",
     "@luzhongk/vue-qrcode": "^0.0.6",
     "@luzhongk/vue-request": "^0.0.6",
+    "@luzhongk/vue-shape": "^0.0.6",
     "core-js": "^3.3.2",
     "js-sha256": "^0.9.0",
     "vue": "^2.6.10"

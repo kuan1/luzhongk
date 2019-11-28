@@ -1,15 +1,14 @@
 <template>
-  <canvas :style="{height: h, width: w}" :url="url" ref="canvas"></canvas>
+  <canvas :style="{ height: h, width: w }" :url="url" ref="canvas"></canvas>
 </template>
 
 <script>
-import QRcode from 'qrcode'
 export default {
-  name: 'myCode',
+  name: "qrcode",
   props: {
     url: {
       type: String,
-      default: ''
+      default: ""
     },
     width: {
       type: [String, Number],
@@ -22,38 +21,44 @@ export default {
   },
   computed: {
     w() {
-      const w = this.width.toString()
+      const w = this.width.toString();
       if (/^\d*$/.test(w)) {
-        return `${w}px`
+        return `${w}px`;
       }
-      return w
+      return w;
     },
     h() {
-      const h = this.height.toString()
+      const h = this.height.toString();
       if (/^\d*$/.test(h)) {
-        return `${h}px`
+        return `${h}px`;
       }
-      return h
+      return h;
     }
   },
   watch: {
     url() {
-      this.generateCode()
+      this.generateCode();
     }
   },
   methods: {
     generateCode() {
-      if (!this.url) return
-      const { canvas } = this.$refs
-      QRcode.toCanvas(canvas, this.url, { width: this.width, height: this.height, margin: '1' }, (err) => {
-        if (err) {
-          console.error(err)
+      if (!this.url) return;
+      const { canvas } = this.$refs;
+      const QRcode = require("qrcode");
+      QRcode.toCanvas(
+        canvas,
+        this.url,
+        { width: this.width, height: this.height, margin: "1" },
+        err => {
+          if (err) {
+            console.error(err);
+          }
         }
-      })
+      );
     }
   },
   mounted() {
-    this.generateCode()
+    this.generateCode();
   }
-}
+};
 </script>
