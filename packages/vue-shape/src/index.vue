@@ -1,12 +1,9 @@
 <template>
   <div :style="style" class="shape-container">
-    <div class="shape-inner"></div>
-    <div
-      v-for="item in actions"
-      :key="item"
-      @mousedown="bindEvent($event, item)"
-      :class="item"
-    ></div>
+    <div class="shape-inner">
+      <slot></slot>
+    </div>
+    <div v-for="item in actions" :key="item" @mousedown="bindEvent($event, item)" :class="item"></div>
   </div>
 </template>
 
