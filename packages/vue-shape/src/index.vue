@@ -1,9 +1,14 @@
 <template>
-  <div :style="style" class="shape-container">
+  <div :style="style" v-on="$listeners" class="shape-container">
     <div class="shape-inner">
       <slot></slot>
     </div>
-    <div v-for="item in actions" :key="item" @mousedown="bindEvent($event, item)" :class="item"></div>
+    <div
+      v-for="item in actions"
+      :key="item"
+      @mousedown="bindEvent($event, item)"
+      :class="item"
+    ></div>
   </div>
 </template>
 
@@ -16,7 +21,7 @@ export default {
     },
     h: {
       type: Number,
-      default: 100
+      default: 1000
     },
     x: {
       type: Number,
@@ -48,6 +53,20 @@ export default {
         left: `${left}px`,
         top: `${top}px`
       };
+    }
+  },
+  watch: {
+    x(x) {
+      this.left = x;
+    },
+    y(y) {
+      this.top = y;
+    },
+    w(w) {
+      this.width = w;
+    },
+    h(h) {
+      this.height = h;
     }
   },
   methods: {
