@@ -23,7 +23,8 @@
     "lib": "lib"
   },
   "files": [
-    "lib"
+    "lib",
+    "src"
   ],
   "publishConfig": {
     "access": "public"
