@@ -1,14 +1,12 @@
 <template>
-  <div :style="style" v-on="$listeners" class="shape-container">
-    <div class="shape-inner">
+  <div v-if="disabled">
+    <slot></slot>
+  </div>
+  <div v-else :style="style" v-on="$listeners" class="shape-container">
+    <div @mousedown="bindEvent($event, 's')" :class="{draggable: draggable}" class="shape-inner">
       <slot></slot>
     </div>
-    <div
-      v-for="item in actions"
-      :key="item"
-      @mousedown="bindEvent($event, item)"
-      :class="item"
-    ></div>
+    <div v-for="item in actions" :key="item" @mousedown="bindEvent($event, item)" :class="item"></div>
   </div>
 </template>
 
@@ -31,8 +29,13 @@ export default {
       type: Number,
       default: 0
     },
-    parent: {
-      type: Object
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    draggable: {
+      type: Boolean,
+      default: false
     }
   },
   data() {
@@ -71,25 +74,32 @@ export default {
   },
   methods: {
     bindEvent(e, className) {
+      if (this.disabled) return;
       const { width, height, left, top } = this;
       // 鼠标按下时的位置
       const clientx = e.clientX;
       const clienty = e.clientY;
       if (typeof document === "undefined") return;
       document.onmousemove = e => {
-        if (className.includes("t")) {
-          this.height = Math.max(height + clienty - e.clientY, 0);
+        if (className === "s") {
+          if (this.draggable) return;
           this.top = top + e.clientY - clienty;
-        }
-        if (className.includes("b")) {
-          this.height = height + e.clientY - clienty;
-        }
-        if (className.includes("r")) {
-          this.width = width + e.clientX - clientx;
-        }
-        if (className.includes("l")) {
-          this.width = width + clientx - e.clientX;
           this.left = left + (e.clientX - clientx);
+        } else {
+          if (className.includes("t")) {
+            this.height = Math.max(height + clienty - e.clientY, 0);
+            this.top = top + e.clientY - clienty;
+          }
+          if (className.includes("b")) {
+            this.height = height + e.clientY - clienty;
+          }
+          if (className.includes("r")) {
+            this.width = width + e.clientX - clientx;
+          }
+          if (className.includes("l")) {
+            this.width = width + clientx - e.clientX;
+            this.left = left + (e.clientX - clientx);
+          }
         }
       };
       document.onmouseup = () => {
@@ -112,7 +122,7 @@ export default {
 <style lang="less" scoped>
 .shape-container {
   position: absolute;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
   width: 150px;
   height: 150px;
   top: 100px;
@@ -125,6 +135,12 @@ export default {
   top: 0;
   width: 100%;
   height: 100%;
+  &.draggable {
+    cursor: grab;
+    &:active {
+      cursor: grabbing;
+    }
+  }
 }
 .t,
 .l,
