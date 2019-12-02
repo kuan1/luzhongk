@@ -30,6 +30,10 @@ yarn add @luzhongk/vue-shape
 <script>
   import VueShape from "@luzhongk/vue-shape";
 
+  // 其他属性
+  // disabled
+  // draggable
+
   export default {
     components: {
       VueShape

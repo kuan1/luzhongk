@@ -2,16 +2,8 @@
   <div class="test-container">
     <h2 class="title">@luzhongk/vue-shape</h2>
     <div class="shape-outer">
-      <vue-shape
-        disabled
-        :x="data.x"
-        :y="data.y"
-        :w="data.w"
-        :h="data.h"
-        @change="data = $event"
-      />
+      <vue-shape :x="data.x" :y="data.y" :w="data.w" :h="data.h" @change="data = $event"></vue-shape>
     </div>
-    {{ data }}
   </div>
 </template>
 
