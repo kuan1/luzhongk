@@ -3,6 +3,7 @@
     <h2 class="title">@luzhongk/vue-shape</h2>
     <div class="shape-outer">
       <vue-shape
+        disabled
         :x="data.x"
         :y="data.y"
         :w="data.w"

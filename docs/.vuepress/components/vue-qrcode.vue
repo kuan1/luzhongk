@@ -10,8 +10,6 @@
 <script>
 import Mycode from "@packages/vue-qrcode";
 
-console.log(Mycode);
-
 export default {
   components: {
     Mycode

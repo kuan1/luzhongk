@@ -1,21 +1,21 @@
-const path = require('path')
-const { mapPackage, resolve } = require('./mapPackage')
+const path = require("path");
+const { mapPackage, resolve } = require("./mapPackage");
 
-const isDev = process.env.NODE_ENV === 'development'
+const isDev = process.env.NODE_ENV === "development";
 
-const base = isDev ? '/' : '/luzhongk/'
+const base = isDev ? "/" : "/luzhongk/";
 
 const alias = {
   ...mapPackage(),
-  '@packages': resolve('packages'),
-  assets: path.resolve(__dirname, '..', 'assets')
-}
+  "@packages": resolve("packages"),
+  assets: path.resolve(__dirname, "..", "assets")
+};
 
 module.exports = {
-  title: 'luzhongk',
-  description: 'vue组件和工具集合-卢忠宽',
+  title: "luzhongk",
+  description: "vue组件和工具集合-卢忠宽",
   base,
-  head: [['link', { rel: 'stylesheet', href: `${base}style.css` }]],
+  head: [["link", { rel: "stylesheet", href: `/style.css` }]],
   themeConfig: {
     sidebar: {
       // '/feedback/': ['/', '/feedback/']
@@ -29,7 +29,7 @@ module.exports = {
       //     { text: '转盘抽奖', link: '/views/lottery' }
       //   ]
       // },
-      { text: 'Github', link: 'https://github.com/kuan1/luzhongk' }
+      { text: "Github", link: "https://github.com/kuan1/luzhongk" }
     ]
   },
   configureWebpack: {
@@ -38,8 +38,8 @@ module.exports = {
       alias
     }
   },
-  extraWatchFiles: ['../../packages'],
+  extraWatchFiles: ["../../packages"],
   less: {
     includePaths: []
   }
-}
+};

@@ -669,8 +669,6 @@ function toast(text) {
 /* harmony default export */ var src_toast = (toast);
 // CONCATENATED MODULE: ./index.js
 
- // function loading() {}
-// function toast() {}
 
 
 /* harmony default export */ var index = ({
