@@ -1,6 +1,6 @@
 {
   "name": "@luzhongk/vue-request",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "axios在vue中使用",
   "keywords": [
     "axios",
@@ -36,7 +36,7 @@
     "url": "https://github.com/kuan1/luzhongk/issues"
   },
   "dependencies": {
-    "@luzhongk/vue-feedback": "^0.0.8",
+    "@luzhongk/vue-feedback": "^0.0.9",
     "axios": "^0.19.0",
     "core-js": "^3.3.2",
     "js-sha256": "^0.9.0",
