@@ -1,3 +1,21 @@
+## [0.0.8](https://github.com/kuan1/luzhongk/compare/v0.0.7...v0.0.8) (2019-12-02)
+
+
+
+## [0.0.7](https://github.com/kuan1/luzhongk/compare/v0.0.6...v0.0.7) (2019-12-02)
+
+
+### Bug Fixes
+
+* package.json ([794c640](https://github.com/kuan1/luzhongk/commit/794c64055f6e4e4ef881d5572c0dea201b182755))
+
+
+### Features
+
+* vue-shape ([8b67164](https://github.com/kuan1/luzhongk/commit/8b671649a4efa3a96ae838ead7241748610a1bdd))
+
+
+
 ## [0.0.6](https://github.com/kuan1/luzhongk/compare/v0.0.5...v0.0.6) (2019-11-18)
 
 

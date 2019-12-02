@@ -1,4 +1,4 @@
-# `@luzhongk/vue-request`
+# `@luzhongk/vue`
 
 > axios 在 vue 中使用
 

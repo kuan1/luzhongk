@@ -1,3 +1,17 @@
+## [0.0.8](https://github.com/kuan1/luzhongk/compare/v0.0.7...v0.0.8) (2019-12-02)
+
+
+
+## [0.0.7](https://github.com/kuan1/luzhongk/compare/v0.0.6...v0.0.7) (2019-12-02)
+
+
+### Features
+
+* vue-button-progress ([0c7d377](https://github.com/kuan1/luzhongk/commit/0c7d3771be15066b823695398b5c997634470cdf))
+* vue-shape ([8b67164](https://github.com/kuan1/luzhongk/commit/8b671649a4efa3a96ae838ead7241748610a1bdd))
+
+
+
 ## [0.0.6](https://github.com/kuan1/luzhongk/compare/v0.0.5...v0.0.6) (2019-11-18)
 
 
