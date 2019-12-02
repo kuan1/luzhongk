@@ -1,4 +1,8 @@
-# [](https://github.com/kuan1/luzhongk/compare/v0.0.6...v) (2019-12-02)
+# [](https://github.com/kuan1/luzhongk/compare/v0.0.7...v) (2019-12-02)
+
+
+
+## [0.0.7](https://github.com/kuan1/luzhongk/compare/v0.0.6...v0.0.7) (2019-12-02)
 
 
 ### Bug Fixes
