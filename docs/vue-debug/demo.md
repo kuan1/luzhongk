@@ -1,4 +1,4 @@
 ---
 navbar: false
-layout: vue-debug
+layout: vue-debug-index
 ---

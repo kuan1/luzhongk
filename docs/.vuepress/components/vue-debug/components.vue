@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import VueDebug from "@halobear/vue-debug";
+import VueDebug from "@luzhongk/vue-debug";
 
 export default {
   components: {
