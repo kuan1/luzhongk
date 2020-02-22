@@ -1,7 +1,3 @@
-import VueDialog from './src/VueDialog.vue'
+import VueDialog from "@halobear/vue-dialog";
 
-VueDialog.install = Vue => {
-  Vue.component('vue-dialog', VueDialog)
-}
-
-export default VueDialog
+export default VueDialog;

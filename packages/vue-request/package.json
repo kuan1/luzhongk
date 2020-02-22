@@ -36,7 +36,6 @@
     "url": "https://github.com/kuan1/luzhongk/issues"
   },
   "dependencies": {
-    "@halobear/vue-debug": "^1.0.2",
     "@luzhongk/vue-feedback": "file:../vue-feedback",
     "axios": "^0.19.0",
     "core-js": "^3.3.2",

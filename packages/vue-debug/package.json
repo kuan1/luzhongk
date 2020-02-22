@@ -37,11 +37,7 @@
     "url": "https://github.com/kuan1/luzhongk/issues"
   },
   "dependencies": {
-    "@halobear/vue-debug": "^1.0.2",
-    "core-js": "^3.3.2",
-    "kuan-css": "^1.0.5",
-    "vconsole": "^3.3.4",
-    "vue": "^2.6.10"
+    "@halobear/vue-debug": "^1.0.2"
   },
   "gitHead": "a1b93494b053f2da8216bbcacff520da22f93779"
 }

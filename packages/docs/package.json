@@ -1,0 +1,21 @@
+{
+  "name": "luzhongk-docs",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development vuepress dev .",
+    "build": "cross-env NODE_ENV=production vuepress build .",
+    "deploy": "NODE_DEBUG=gh-pages gh-pages -d .vuepress/dist",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+  },
+  "gitHooks": {
+    "commit-msg": "node scripts/verifyCommitMsg.js"
+  },
+  "keywords": [
+    "luzhongk"
+  ],
+  "author": "luzhongk@126.com",
+  "license": "ISC",
+  "dependencies": {
+    "@luzhongk/vue-debug": "file:../vue-debug"
+  }
+}

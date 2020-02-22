@@ -1,7 +1,3 @@
-import VueDebug from './src/VueDebug.vue'
+import VueDebug from "@halobear/vue-debug";
 
-VueDebug.install = Vue => {
-  Vue.component('vue-debug', VueDebug)
-}
-
-export default VueDebug
+export default VueDebug;
