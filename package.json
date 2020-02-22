@@ -18,24 +18,34 @@
   "author": "luzhongk@126.com",
   "license": "ISC",
   "dependencies": {
-    "core-js": "^3.3.2",
-    "kuan-css": "^1.0.5",
-    "qrcode": "^1.4.2",
-    "vconsole": "^3.3.4",
-    "vue": "^2.6.10"
+    "@luzhongk/vue": "file:packages/vue",
+    "@luzhongk/vue-debug": "file:packages/vue-debug",
+    "@luzhongk/vue-dialog": "file:packages/vue-dialog",
+    "@luzhongk/vue-drawer": "file:packages/vue-drawer",
+    "@luzhongk/vue-feedback": "file:packages/vue-feedback",
+    "@luzhongk/vue-qrcode": "file:packages/vue-qrcode",
+    "@luzhongk/vue-request": "file:packages/vue-request",
+    "@luzhongk/vue-shape": "file:packages/vue-shape"
   },
   "devDependencies": {
     "@vue/babel-preset-app": "^4.0.5",
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
     "axios": "^0.19.0",
+    "babel-eslint": "^10.0.1",
     "blueimp-md5": "^2.12.0",
     "chalk": "^2.4.2",
     "cross-env": "^6.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
     "gh-pages": "^2.1.1",
     "inquirer": "^7.0.0",
     "js-sha256": "^0.9.0",
     "lerna": "^3.16.4",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
+    "vue-template-compiler": "^2.5.21",
     "yorkie": "^2.0.0"
   }
 }

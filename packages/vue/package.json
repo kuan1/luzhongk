@@ -34,25 +34,17 @@
     "url": "https://github.com/kuan1/luzhongk/issues"
   },
   "dependencies": {
-    "@luzhongk/vue-debug": "^0.0.9",
-    "@luzhongk/vue-dialog": "^0.0.9",
-    "@luzhongk/vue-drawer": "^0.0.9",
-    "@luzhongk/vue-feedback": "^0.0.9",
-    "@luzhongk/vue-qrcode": "^0.0.9",
-    "@luzhongk/vue-request": "^0.0.9",
+    "@halobear/vue-debug": "^1.0.2",
+    "@luzhongk/vue-debug": "file:../vue-debug",
+    "@luzhongk/vue-dialog": "file:../vue-dialog",
+    "@luzhongk/vue-drawer": "file:../vue-drawer",
+    "@luzhongk/vue-feedback": "file:../vue-feedback",
+    "@luzhongk/vue-qrcode": "file:../vue-qrcode",
+    "@luzhongk/vue-request": "file:../vue-request",
     "@luzhongk/vue-shape": "^0.0.6",
     "core-js": "^3.3.2",
     "js-sha256": "^0.9.0",
     "vue": "^2.6.10"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.7.0",
-    "@vue/cli-plugin-eslint": "^3.7.0",
-    "@vue/cli-service": "^3.7.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21"
   },
   "gitHead": "a1b93494b053f2da8216bbcacff520da22f93779"
 }
