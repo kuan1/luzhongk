@@ -1,6 +1,3 @@
-import createApi from './src/createApi'
-import encrypt from './src/encrypt'
-import loading from './src/utils/loading'
-import toast from './src/utils/toast'
+import { createApi, encrypt, loading, toast } from "@halobear/vue-request";
 
-export { createApi, encrypt, loading, toast }
+export { createApi, encrypt, loading, toast };

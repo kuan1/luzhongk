@@ -36,9 +36,7 @@
     "url": "https://github.com/kuan1/luzhongk/issues"
   },
   "dependencies": {
-    "core-js": "^3.3.2",
-    "qrcode": "^1.4.2",
-    "vue": "^2.6.10"
+    "@halobear/vue-qrcode": "^1.0.2"
   },
   "gitHead": "a1b93494b053f2da8216bbcacff520da22f93779"
 }

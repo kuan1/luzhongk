@@ -7,6 +7,6 @@
     }
   },
   "allowSyntheticDefaultImports": true,
-  "include": ["packages/docs/**/*", "./packages/**/*"],
+  "include": ["docs/**/*", "./packages/**/*"],
   "exclude": ["node_modules"]
 }

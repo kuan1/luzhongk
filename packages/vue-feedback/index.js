@@ -1,11 +1,3 @@
-import loading from "./src/loading";
-import toast from "./src/toast";
+import { loading, toast } from "@haloebar/vue-feedback";
 
 export { loading, toast };
-
-export default {
-  install(Vue) {
-    Vue.prototype.$toast = toast;
-    Vue.prototype.$loading = loading;
-  }
-};

@@ -1,7 +1,3 @@
-import VueShape from "./src/index.vue";
-
-VueShape.install = Vue => {
-  Vue.component("vue-shape", VueShape);
-};
+import VueShape from "@halobear/vue-shape";
 
 export default VueShape;

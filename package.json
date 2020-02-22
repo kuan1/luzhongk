@@ -46,7 +46,6 @@
     "@luzhongk/vue-feedback": "file:packages/vue-feedback",
     "@luzhongk/vue-qrcode": "file:packages/vue-qrcode",
     "@luzhongk/vue-request": "file:packages/vue-request",
-    "@luzhongk/vue-shape": "file:packages/vue-shape",
-    "luzhongk-docs": "file:packages/docs"
+    "@luzhongk/vue-shape": "file:packages/vue-shape"
   }
 }
