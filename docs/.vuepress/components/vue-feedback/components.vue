@@ -1,15 +1,9 @@
 <template>
   <div class="test-container">
-    <h2 class="title">@halobear/vue-dialog</h2>
-    <button @click="showDialog('center')" class="k-btn k-btn-primary">
-      居中弹窗
-    </button>
-    <button @click="showDialog('bottom')" class="k-btn k-btn-primary">
-      底部弹窗
-    </button>
-    <button @click="showDialog('top')" class="k-btn k-btn-primary">
-      上部弹窗
-    </button>
+    <h2 class="title">@luzhongk/vue-dialog</h2>
+    <button @click="showDialog('center')" class="k-btn k-btn-primary">居中弹窗</button>
+    <button @click="showDialog('bottom')" class="k-btn k-btn-primary">底部弹窗</button>
+    <button @click="showDialog('top')" class="k-btn k-btn-primary">上部弹窗</button>
     <vue-dialog :direction="direction" v-model="visible">
       <div class="test-inner"></div>
     </vue-dialog>
@@ -18,7 +12,7 @@
 
 <script>
 import "kuan-css";
-import VueDialog from "@halobear/vue-dialog";
+import VueDialog from "@luzhongk/vue-dialog";
 
 export default {
   components: {
