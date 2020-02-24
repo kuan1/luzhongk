@@ -1,4 +1,18 @@
-# [](https://github.com/kuan1/luzhongk/compare/v0.0.8...v) (2019-12-02)
+# [](https://github.com/kuan1/luzhongk/compare/v0.0.9...v) (2020-02-24)
+
+
+### Bug Fixes
+
+* 防止多次toast ([e6f8082](https://github.com/kuan1/luzhongk/commit/e6f808256bceae3c716c0e779cfa4d640b108414))
+
+
+### Features
+
+* vue-request ([a269457](https://github.com/kuan1/luzhongk/commit/a269457023ba09b32a25c8bf1b78245d0f809b71))
+
+
+
+## [0.0.9](https://github.com/kuan1/luzhongk/compare/v0.0.8...v0.0.9) (2019-12-02)
 
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@luzhongk/vue-request",
-  "version": "0.0.9",
+  "version": "0.1.0-alpha.0",
   "description": "axios在vue中使用",
   "keywords": [
     "axios",

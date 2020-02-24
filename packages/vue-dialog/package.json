@@ -1,6 +1,6 @@
 {
   "name": "@luzhongk/vue-dialog",
-  "version": "0.0.9",
+  "version": "0.1.0-alpha.0",
   "description": "一个简单vue弹窗",
   "keywords": [
     "vue",
