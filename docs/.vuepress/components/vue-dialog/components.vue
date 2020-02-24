@@ -12,7 +12,7 @@
 
 <script>
 import "kuan-css";
-import VueDebug from "@luzhongk/vue-debug";
+import VueDialog from "@luzhongk/vue-dialog";
 
 export default {
   components: {
